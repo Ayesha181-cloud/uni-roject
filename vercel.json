@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "frontened/dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/shorten",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/analytics",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/status",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/links/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/r/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/:code([a-zA-Z0-9-_]{3,30})",
+      "destination": "/api/index.js"
+    }
+  ]
+}

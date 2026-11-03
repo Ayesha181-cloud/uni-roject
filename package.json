@@ -1,0 +1,17 @@
+{
+  "name": "snaplink-url-shortener",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm --prefix frontened run build",
+    "dev": "npm --prefix frontened run dev"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2",
+    "qrcode": "^1.5.4"
+  }
+}
